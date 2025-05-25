@@ -357,12 +357,12 @@ const allQuestions = [
           feedback.style.color = "green";
         } else {
           questionBlock.classList.add("incorrect");
-          feedback.innerHTML = `❌ Wrong – Correct Answer: <strong>${q.options[q.correctAnswer]}</strong>`;
+          feedback.innerHTML = `❌ Wrong – Correct Answer: <strong>${q.options[q.correctIndex]}</strong>`;
           feedback.style.color = "red";
         }
       } else {
         questionBlock.classList.add("incorrect");
-        feedback.innerHTML = `⚠️ Not Answered – Correct Answer: <strong>${q.options[q.correctAnswer]}</strong>`;
+        feedback.innerHTML = `⚠️ Not Answered – Correct Answer: <strong>${q.options[q.correctIndex]}</strong>`;
         feedback.style.color = "orange";
       }
 
